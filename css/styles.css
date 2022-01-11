@@ -1,0 +1,33 @@
+@import url("vars.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+.bg_primary{
+    background-color: var(--primary);
+}
+.bg_secondary{
+    background-color: var(--secondary);
+}
+.bg_tertiary{
+    background-color: var(--tertiary);
+}
+.bg_fourth{
+    background-color: var(--fourth);
+}
+.text_primary{
+    color: var(--primary);
+}
+.text_secondary{
+    color: var(--secondary);
+}
+.text_tertiary{
+    color: var(--tertiary);
+}
+.text_fourth{
+    color: var(--fourth);
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #00000071;
+}
