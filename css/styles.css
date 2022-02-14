@@ -12,6 +12,12 @@
 .bg_fourth{
     background-color: var(--fourth);
 }
+.bg_green{
+    background-color: #fdffea;
+}
+.degradado{
+    background: linear-gradient(90deg, var(--primary) 40%, var(--fourth) 75% );
+}
 .text_primary{
     color: var(--primary);
 }
@@ -24,10 +30,14 @@
 .text_fourth{
     color: var(--fourth);
 }
-
+.texto-justificado{
+    text-align: justify;
+}
 .overlay{
-    height: 100%;
-    width: 100%;
     position: absolute;
-    background-color: #00000071;
+    background-color: #0000002c;
+}
+
+.font_mochiy{
+    font-family: 'Mochiy Pop P One', sans-serif;
 }

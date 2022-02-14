@@ -21,16 +21,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 bg_secondary">
             <li class="nav-item">
-              <a class="nav-link active text-white ms-2"" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active text-white ms-2"" aria-current="page" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white ms-2" href="extras/shop/hogar.html">Hogar</a>
+              <a class="nav-link text-white ms-2" href="pages/shop/hogar.html">Hogar</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white ms-2" href="extras/shop/alimentacion.html">Alimentación</a>
+              <a class="nav-link text-white ms-2" href="pages/shop/alimentacion.html">Alimentación</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white ms-2"  href="extras/shop/moda.html" >Moda</a>
+              <a class="nav-link text-white ms-2"  href="pages/shop/moda.html" >Moda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white ms-2 fw-bolder"  href="pages/blog.html">Blog  </a>
             </li>
           </ul>
           <form class="d-flex">
@@ -39,22 +42,20 @@
 
             <div class="d-flex me-2">
             <button id="btn_cart" class="btn bg_secondary">
-              <a href="extras/btn_nav/cart.html" class="bi bi-cart-fill text-white">
+              <a href="pages/btn_nav/cart.html" class="bi bi-cart-fill text-white">
                
               </a>
             </button>
             </div>
 
             <div class="d-flex me-2">
-              <button id="btn_cart" class="btn bg_secondary">
-                <a href="extras/btn_nav/log_in.html" class="bi bi-person text-white">
+              <button id="btn_cart" class="btn bg_secondary" style="width:10vh;">
+                <a href="pages/btn_nav/log_in.html" class="bi bi-person text-white">
                  
                 </a>
               </button>
               </div>
-            
           </form>
-          
         </div>
       </div>
     </nav>
@@ -138,7 +139,10 @@
 
     <!-- Banner -->
     <div class="img-thumbnail mt-3">
-        <img src="https://tienda.oxfamintermon.org/modules/pspagebuilder/views/img/Banner%20b2c%20rebajas%20enero-min.png" class="rounded-3" style="width: 100%;" alt="">
+        <a href="pages/shop/moda.html">
+          <img src="https://tienda.oxfamintermon.org/modules/pspagebuilder/views/img/Banner%20b2c%20rebajas%20enero-min.png" class="rounded-3" style="width: 100%;" alt="">
+        </a>
+      
     </div>
     
 
@@ -219,7 +223,9 @@
       </div>
 
       <div class=" d-flex justify-content-center mt-4">
-        <button type="submit" name="ver_mas" class="bg_fourth texto rounded-2 px-3">Ver más</button>
+        <button type="submit" name="ver_mas" class="bg_fourth texto rounded-2 px-3">
+          <a href="pages/shop/alimentacion.html" class="text-decoration-none text-dark fw-bolder">VER MÁS</a>
+        </button>
       </div>
     </section>
   </section>
@@ -258,7 +264,7 @@
 
 
       <!-- FOOTER -->
-    <footer class="bg_secondary py-3 mt-5 d-flex flex-column align-items-center">
+    <footer class="w-100 bg_secondary py-3 mt-5 d-flex flex-column align-items-center">
       <div class="text-white">
           <div class="d-flex">
             <div class="d-flex flex-column align-items-center">
