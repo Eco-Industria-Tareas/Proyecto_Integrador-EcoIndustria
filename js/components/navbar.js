@@ -2,7 +2,7 @@
    Contiene la barra de navegación 
    así como los link de acceso a otras paginas */
 
-import STORAGE from "../utils/storage.js";
+// import STORAGE from "../utils/storage.js";
 
 export default Vue.component("navbar", {
   props: [],
@@ -45,6 +45,8 @@ export default Vue.component("navbar", {
     // }, 1000);
   },
   template: `
+
+  <div>
     <nav class="navbar navbar-expand-lg degradado shadow-lg sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand  text-white fw-bolder fs-3" href="../../index.html">ECO-INDUSTRY</a>
@@ -93,5 +95,6 @@ export default Vue.component("navbar", {
         </div>
       </div>
   </nav>
+  </div>
     `,
 });

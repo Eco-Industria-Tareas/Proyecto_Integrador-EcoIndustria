@@ -1,6 +1,6 @@
 /* Se importan todas las Paginas & componentes del proyecto */
 import LoginPage from "./pages/login_page.js";
-import RegisterPage from "./pages/register_page"
+import RegisterPage from "./pages/register_page.js"
 import Navbar from "./components/navbar.js";
 import Footer from "./components/footer.js";
 
@@ -8,6 +8,7 @@ import Footer from "./components/footer.js";
 var routes = [
   { path: "/", component: LoginPage },
   { path: "/register", component: RegisterPage },
+  { path: "/login_page", component: LoginPage},
 ];
 /* Creamos el router del proyecto y
  cargamos las rutas disponibles */
