@@ -2,6 +2,9 @@
 import LoginPage from "./pages/login_page.js";
 import RegisterPage from "./pages/register_page.js";
 import alimentacion from "./components/alimentacion.js";
+import hogar from "./components/hogar.js";
+import moda from "./components/moda.js";
+import blog from "./components/blog.js";
 import Navbar from "./components/navbar.js";
 import inicio from "./pages/inicio.js";
 import Footer from "./components/footer.js";
@@ -13,7 +16,10 @@ var routes = [
   { path: "/", component: inicio },
   { path: "/register", component: RegisterPage },
   { path: "/login_page", component: LoginPage},
-  { path: "/alimentacion", component: alimentacion}
+  { path: "/alimentacion", component: alimentacion},
+  { path: "/hogar", component: hogar},
+  { path: "/moda", component: moda},
+  { path: "/blog", component: blog},
 ];
 /* Creamos el router del proyecto y
  cargamos las rutas disponibles */

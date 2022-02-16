@@ -53,7 +53,7 @@ export default Vue.component("alimentacion", {
   </div>
 
   <div class="my-5 text_primary text-center">
-    <h1 class="font_mochiy">ALIMETACIÓN</h1>
+    <h1 class="font_mochiy">ALIMENTACIÓN</h1>
   </div>
 
   <div class="d-flex d-block">

@@ -20,12 +20,24 @@ export default Vue.component("navbar", {
     // },
   },
   methods: {
-    // goLogin() {
-    //   this.$router.push("/");
-    // },
-    // goBack() {
-    //   this.$router.push("/");
-    // },
+    goInicio(){
+      this.$router.push("/")
+    },
+    goHogar() {
+      this.$router.push("/hogar");
+    },
+    goAlimentacion() {
+      this.$router.push("/alimentacion");
+    },
+    goModa() {
+      this.$router.push("/moda");
+    },
+    goBlog(){
+      this.$router.push("/blog")
+    },
+    goBack() {
+      this.$router.push("/");
+    },
     // goRegister() {
     //   // Redirige al usuario al listado de productos
     //   this.$router.push("register");
@@ -56,19 +68,19 @@ export default Vue.component("navbar", {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 bg_secondary">
             <li class="nav-item">
-              <a class="nav-link active text-white ms-2"" aria-current="page" href="../../index.html">Inicio</a>
+            <button type="button" @click="goInicio" class="btn btn-link px-3 me-2 text-decoration-none">Inicio</button>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white ms-2" href="../shop/hogar.html">Hogar</a>
+            <button type="button" @click="goHogar" class="btn btn-link px-3 me-2 text-decoration-none">Hogar</button>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white ms-2" href="../shop/alimentacion.html">Alimentación</a>
+              <button type="button" @click="goAlimentacion" class="btn btn-link px-3 me-2 text-decoration-none">Alimentacion</button>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white ms-2"  href="../shop/moda.html">Moda</a>
+            <button type="button" @click="goModa" class="btn btn-link px-3 me-2 text-decoration-none">Moda</button>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white ms-2 fw-bolder"  href="../blog.html">Blog</a>
+            <button type="button" @click="goBlog" class="btn btn-link px-3 me-2 text-decoration-none">Blog</button>
             </li>
           </ul>
 
