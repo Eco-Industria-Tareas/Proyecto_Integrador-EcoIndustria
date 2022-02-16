@@ -43,10 +43,7 @@ export default Vue.component("hogar", {
     template: `
   
     <div>
-    <div class="my-3 ms-5 tc-primary ">
-    <p><a class="text-decoration-none text-dark" href="../../index.html">Inicio /</a> 
-      <a class="text-dark" href="hogar.html">Hogar</a></p>
-  </div>
+
 
   <div class="my-5 text_primary text-center">
     <h2 class="font_mochiy">HOGAR</h2>

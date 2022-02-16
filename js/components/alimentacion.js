@@ -47,10 +47,6 @@ export default Vue.component("alimentacion", {
     template: `
   
     <div>
-    <div class="my-3 ms-5 tc-primary ">
-    <p><a class="text-decoration-none text-dark" href="../../index.html">Inicio /</a> 
-      <a class="text-dark" href="alimentacion.html">Alimetación</a></p>
-  </div>
 
   <div class="my-5 text_primary text-center">
     <h1 class="font_mochiy">ALIMENTACIÓN</h1>

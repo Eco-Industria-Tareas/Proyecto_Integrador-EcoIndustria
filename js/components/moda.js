@@ -43,11 +43,6 @@ export default Vue.component("moda", {
     template: `
   
     <div>
-            <div class="my-3 ms-5 tc-primary ">
-            <p><a class="text-decoration-none text-dark" href="../../index.html">Inicio /</a> 
-            <a class="text-dark" href="moda.html">Moda</a></p>
-        </div>
-
         <div class="my-5 text_primary text-center">
             <h1 class="font_mochiy">MODA</h1>
         </div>
