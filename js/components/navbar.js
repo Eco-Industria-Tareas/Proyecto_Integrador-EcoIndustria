@@ -35,6 +35,9 @@ export default Vue.component("navbar", {
     goBlog(){
       this.$router.push("/blog")
     },
+    goLogin(){
+      this.$router.push("/login_page")
+    },
     goBack() {
       this.$router.push("/");
     },
@@ -97,10 +100,7 @@ export default Vue.component("navbar", {
             </div>
 
             <div class="d-flex me-2">
-              <button id="btn_cart" class="btn bg_secondary" style="width:10vh;">
-                <a href="log_in.html" class="bi bi-person-fill text-white">
-                
-                </a>
+              <button id="btn_cart" class="btn bg_secondary bi bi-person-fill text-white" @click="goLogin" style="width:10vh;">
               </button>
               </div>
           </form>

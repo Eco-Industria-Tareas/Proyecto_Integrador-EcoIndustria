@@ -1,5 +1,5 @@
-import CLIENT from "../api/client.js";
-import STORAGE from "../utils/storage.js";
+// import CLIENT from "../api/client.js";
+// import STORAGE from "../utils/storage.js";
 
 export default Vue.component("login-page", {
   data: function () {
@@ -9,6 +9,9 @@ export default Vue.component("login-page", {
     };
   },
   methods: {
+    goRegister(){
+      this.$router.push("/register")
+    },
     // DoLogin: async function () {
     //   let vm = this;
     //   try {
@@ -41,6 +44,7 @@ export default Vue.component("login-page", {
     // }
   },
   template: `
+  
     <div class="container">
         <div class="row">
             <div class="col-md-6 offset-md-3">
@@ -63,8 +67,8 @@ export default Vue.component("login-page", {
                          </div>
 
                         <div class="mt-3  d-flex justify-content-center">
-                            <label for="">¿No tienes cuenta?⠀</label> 
-                        <a href="sign_in.html" class="text_secondary mb-3 fw-bolder">¡Click aquí!</a>
+                          <label for="">¿No tienes cuenta?</label> 
+                          <a @click="goRegister" class="text_secondary mb-3 fw-bolder">¡Click aquí!</a>
                         </div>
                     </form>
                 </div>

@@ -61,11 +61,6 @@ export default Vue.component("register-page", {
               </div>
 
               <div class="mb-3 col-md-12">
-                <label>Confirma tu Email</label>
-                <input type="text" name="password" class="form-control" placeholder="Confirma tu Email">
-              </div>
-
-              <div class="mb-3 col-md-12">
                 <label>Contraseña</label>
                 <input type="password" name="password" class="form-control" placeholder="Introduce tu nueva contraseña">
               </div>
@@ -77,7 +72,7 @@ export default Vue.component("register-page", {
               <div class="form-check d-flex justify-content-center">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                 <label class="form-check-label cl_fourth" for="flexCheckChecked">
-                  ⠀Aceptar terminos y Condiciones.
+                  Aceptar terminos y Condiciones.
                 </label>
               </div>
               <br><br>

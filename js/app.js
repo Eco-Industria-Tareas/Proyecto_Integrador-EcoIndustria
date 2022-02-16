@@ -35,6 +35,6 @@ var router = new VueRouter({
 var app = new Vue({
   el: "#app",
   components: { Navbar },
-  components: { Footer },
+
   router: router,
 });
