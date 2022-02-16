@@ -7,7 +7,7 @@ import moda from "./components/moda.js";
 import blog from "./components/blog.js";
 import Navbar from "./components/navbar.js";
 import inicio from "./pages/inicio.js";
-import Footer from "./components/footer.js";
+import piepagina from "./components/footer.js";
 // import Blog from  "./"
 
 
@@ -34,7 +34,7 @@ var router = new VueRouter({
 
 var app = new Vue({
   el: "#app",
-  components: { Navbar },
+  components: { Navbar ,piepagina},
 
   router: router,
 });
