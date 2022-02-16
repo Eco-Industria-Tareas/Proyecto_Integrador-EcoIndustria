@@ -4,7 +4,7 @@
 
 import STORAGE from "../utils/storage.js";
 
-export default Vue.component("Footer", {
+export default Vue.component("footer", {
   props: [],
   data: function () {
     return {
@@ -45,6 +45,7 @@ export default Vue.component("Footer", {
     // }, 1000);
   },
   template: `
+    <div>
         <footer class="bg_secondary py-3 mt-5 d-flex flex-column align-items-center">
       <div class="text-white">
           <div class="d-flex">
@@ -82,5 +83,6 @@ export default Vue.component("Footer", {
         <p class="text-center mt-1">Copyright &copy; 2022 by <b>Eco-Industry</b> team.</p>
       </div>
     </footer>
+    </div>
     `,
 });

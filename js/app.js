@@ -26,3 +26,10 @@ var app = new Vue({
   components: { Navbar },
   router: router,
 });
+
+
+var app = new Vue({
+  el: "#app",
+  components: { Footer },
+  router: router,
+});
