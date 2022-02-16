@@ -1,4 +1,4 @@
-export default Vue.component("products", {
+export default Vue.component("inicio", {
     data: function () {
       return {
         
@@ -69,6 +69,7 @@ export default Vue.component("products", {
       }
     },
     template: `
+    <div>
            <!-- CAROUSEL -->
     <div id="carouselExampleIndicators" class="carousel slide"  data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -270,6 +271,7 @@ export default Vue.component("products", {
           </div>
         </div>
       </div>
+    </div>
       `,
   });
   
