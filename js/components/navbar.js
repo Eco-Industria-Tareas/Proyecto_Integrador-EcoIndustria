@@ -77,7 +77,7 @@ export default Vue.component("navbar", {
             <button type="button" @click="goHogar" class="btn btn-link px-3 me-2 text-decoration-none">Hogar</button>
             </li>
             <li class="nav-item">
-              <button type="button" @click="goAlimentacion" class="btn btn-link px-3 me-2 text-decoration-none">Alimentacion</button>
+              <button type="button" @click="goAlimentacion" class="btn btn-link px-3 me-2 text-decoration-none">Alimentación</button>
             </li>
             <li class="nav-item">
             <button type="button" @click="goModa" class="btn btn-link px-3 me-2 text-decoration-none">Moda</button>

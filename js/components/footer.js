@@ -50,31 +50,16 @@ export default Vue.component("footer", {
       <div class="text-white">
           <div class="d-flex">
             <div class="d-flex flex-column align-items-center">
-              <div class="fs-4">
-                <i class="fab fa-instagram"></i>
-              </div>
-              <a class="fw-bolder text-white text-decoration-none" href="https://www.instagram.com">@eco_industry</a>
+              <a href="https://www.instagram.com" target="_blank" class="fs-1 bi bi-instagram fw-bolder text-white text-decoration-none" aria-hidden="true"></a>
             </div>
-
             <div class="d-flex flex-column align-items-center ms-5 me-5">
-              <div class="fs-4">
-                <i class="fab fa-facebook"></i>
-              </div>
-              <a class="fw-bolder text-white text-decoration-none" href="https://www.facebook.com">Eco Industia Marker</a>
+              <a href="https://www.facebook.com" target="_blank" class="fs-1 bi bi-facebook fw-bolder text-white text-decoration-none" aria-hidden="true"></a>
             </div>
-
             <div class="d-flex flex-column align-items-center me-5">
-              <div class="fs-4">
-                <i class="far fa-envelope"></i>
-              </div>
-              <a class="fw-bolder text-white text-decoration-none" href="#">ecoindustryteam@gmail.com</a>
+              <a href="mailto:ra305169@gamil.com?Subject=Atención" target="_blank" class="fs-1 bi bi-envelope fw-bolder text-white text-decoration-none" aria-hidden="true"></a>
             </div>
-
             <div class="d-flex flex-column align-items-center">
-              <div class="fs-4">
-                <i class="fas fa-phone"></i>
-              </div>
-              <p class="fw-bolder">+502 9856 5197</p>
+              <a href="https://api.whatsapp.com/send?phone=50256989751" target="_blank" class="fs-1 bi bi-whatsapp fw-bolder text-white text-decoration-none" aria-hidden="true" ></a>
             </div>
           </div>
       </div>
