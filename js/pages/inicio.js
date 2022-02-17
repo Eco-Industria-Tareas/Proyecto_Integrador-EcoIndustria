@@ -5,6 +5,9 @@ export default Vue.component("inicio", {
       };
     },
     methods: {
+      goHogar() {
+        this.$router.push("/hogar");
+      },
       async setCategory(category) {
         let vm = this;
         vm.current_category = category;
@@ -233,8 +236,9 @@ export default Vue.component("inicio", {
       </div>
 
       <div class=" d-flex justify-content-center mt-4">
-        <button type="submit" name="ver_mas" class="bg_fourth texto rounded-2 px-3">
-          <a href="pages/shop/alimentacion.html" class="text-decoration-none text-dark fw-bolder">VER MÁS</a>
+        <button type="button" @click="goHogar" name="ver_mas" class="bg_fourth texto rounded-2 px-3">
+          <!-- <a href="pages/shop/alimentacion.html" class="text-decoration-none text-dark fw-bolder">VER MÁS</a> -->
+          VER MÁS
         </button>
       </div>
     </section>
