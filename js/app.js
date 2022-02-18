@@ -8,6 +8,7 @@ import blog from "./components/blog.js";
 import Navbar from "./components/navbar.js";
 import inicio from "./pages/inicio.js";
 import piepagina from "./components/footer.js";
+import conocenos from "./pages/conocenos.js";
 // import Blog from  "./"
 
 
@@ -20,6 +21,7 @@ var routes = [
   { path: "/hogar", component: hogar},
   { path: "/moda", component: moda},
   { path: "/blog", component: blog},
+  { path: "/conocenos", component: conocenos},
 ];
 /* Creamos el router del proyecto y
  cargamos las rutas disponibles */

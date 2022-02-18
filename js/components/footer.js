@@ -20,6 +20,9 @@ export default Vue.component("footer", {
     // },
   },
   methods: {
+    goBlog(){
+      this.$router.push("/blog")
+    },
     // goLogin() {
     //   this.$router.push("/");
     // },
@@ -59,7 +62,7 @@ export default Vue.component("footer", {
               <a href="mailto:ra305169@gmail.com?Subject=Atención" target="_blank" class="fs-1 bi bi-envelope fw-bolder text-white text-decoration-none" aria-hidden="true"></a>
             </div>
             <div class="d-flex flex-column align-items-center me-5">
-              <a href="" class="fs-1 bi bi-newspaper fw-bolder text-white text-decoration-none" aria-hidden="true"></a>
+              <a @click="goBlog" class="fs-1 bi bi-newspaper fw-bolder text-white text-decoration-none" aria-hidden="true"></a>
             </div>
             <div class="d-flex flex-column align-items-center">
               <a href="https://api.whatsapp.com/send?phone=50232306256" target="_blank" class="fs-1 bi bi-whatsapp fw-bolder text-white text-decoration-none" aria-hidden="true" ></a>

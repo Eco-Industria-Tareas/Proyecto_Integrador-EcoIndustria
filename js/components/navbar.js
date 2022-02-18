@@ -38,6 +38,9 @@ export default Vue.component("navbar", {
     goLogin(){
       this.$router.push("/login_page")
     },
+    goConoce(){
+      this.$router.push("/conocenos")
+    },
     goBack() {
       this.$router.push("/");
     },
@@ -83,7 +86,7 @@ export default Vue.component("navbar", {
             <button type="button" @click="goModa" class="btn btn-link px-3 me-2 text-decoration-none">Moda</button>
             </li>
             <li class="nav-item">
-            <button type="button" @click="goBlog" class="btn btn-link px-3 me-2 text-decoration-none">Blog</button>
+            <button type="button" @click="goConoce" class="btn btn-link px-3 me-2 text-decoration-none">Contactanos</button>
             </li>
           </ul>
 
