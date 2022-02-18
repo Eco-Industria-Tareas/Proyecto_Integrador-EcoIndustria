@@ -5,6 +5,9 @@ export default Vue.component("inicio", {
       };
     },
     methods: {
+      goModa() {
+        this.$router.push("/moda");
+      },
       goHogar() {
         this.$router.push("/hogar");
       },
@@ -152,7 +155,7 @@ export default Vue.component("inicio", {
 
     <!-- Banner -->
     <div class="img-thumbnail mt-3">
-        <a href="pages/shop/moda.html">
+        <a @click="goModa">
           <img src="https://tienda.oxfamintermon.org/modules/pspagebuilder/views/img/Banner%20b2c%20rebajas%20enero-min.png" class="rounded-3" style="width: 100%;" alt="">
         </a>
       
@@ -258,14 +261,12 @@ export default Vue.component("inicio", {
             </div>
             <p class="text_primary fw-bolder">PRODUCTOS 100% ECOLÓGICOS</p>
           </div>
-
           <div class="tipo d-flex flex-column align-items-center ms-5 me-5 text_secondary">
             <div class="fs-1">
               <i class="fas fa-lock"></i>
             </div>
             <p class="text_primary fw-bolder">COMPRAS SEGURAS</p>
           </div>
-
           <div class="tipo d-flex flex-column align-items-center text_secondary ms-5">
             <div class="fs-1">
               <i class="fas fa-globe"></i>
