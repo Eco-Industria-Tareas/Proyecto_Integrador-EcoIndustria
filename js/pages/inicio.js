@@ -249,33 +249,36 @@ export default Vue.component("inicio", {
 
 
     <!-- APARTADO OBJETIVOS EMPRESA -->
-    <div class="mt-5 d-flex flex-column align-items-center">
-      <div class="text_primary">
+    <div class=" mt-5 d-flex flex-column align-items-center">
+      <div class="text_primary text-center">
         <h1>¿POR QUÉ COMPRAR EN ECO-INDUSTRY?</h1>
       </div>
-      <div>
-        <div class="mt-3 d-flex justify-content-evenly align-items-center">
-          <div class="tipo d-flex flex-column align-items-center text_secondary me-5">
+  
+        <div class="mt-3 d-flex justify-content-evenly align-items-center   row-cols-xl-3">
+          
+          <div class="d-flex flex-column align-items-center text_secondary text-center px-3">
             <div class="fs-1">
               <i class="fas fa-seedling"></i>
             </div>
             <p class="text_primary fw-bolder">PRODUCTOS 100% ECOLÓGICOS</p>
           </div>
-          <div class="tipo d-flex flex-column align-items-center ms-5 me-5 text_secondary">
+
+          <div class="d-flex flex-column align-items-center text_secondary text-center ">
             <div class="fs-1">
               <i class="fas fa-lock"></i>
             </div>
             <p class="text_primary fw-bolder">COMPRAS SEGURAS</p>
           </div>
-          <div class="tipo d-flex flex-column align-items-center text_secondary ms-5">
+
+          <div class="d-flex flex-column align-items-center text_secondary text-center px-3 ">
             <div class="fs-1">
               <i class="fas fa-globe"></i>
             </div>
-            <p class="text_primary fw-bolder">APOYAMOS A PREDUCTORES LOCALES</p>
+            <p class="text_primary fw-bolder">APOYAMOS A PRODUCTORES LOCALES</p>
           </div>
-          </div>
+
         </div>
-      </div>
+ 
     </div>
       `,
   });
