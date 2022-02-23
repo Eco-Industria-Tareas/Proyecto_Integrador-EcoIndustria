@@ -7,6 +7,7 @@ import moda from "./components/moda.js";
 import blog from "./components/blog.js";
 import Navbar from "./components/navbar.js";
 import inicio from "./pages/inicio.js";
+import ProductView from "./pages/product_view.js";
 import piepagina from "./components/footer.js";
 import conocenos from "./pages/conocenos.js";
 // import Blog from  "./"
@@ -17,6 +18,7 @@ var routes = [
   { path: "/", component: inicio },
   { path: "/register", component: RegisterPage },
   { path: "/login_page", component: LoginPage},
+  { path: "/product-view", component: ProductView},
   { path: "/alimentacion", component: alimentacion},
   { path: "/hogar", component: hogar},
   { path: "/moda", component: moda},

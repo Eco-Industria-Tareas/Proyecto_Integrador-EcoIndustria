@@ -74,19 +74,19 @@ export default Vue.component("navbar", {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 bg_secondary">
             <li class="nav-item">
-            <button type="button" @click="goInicio" class="btn btn-link px-3 me-2 text-decoration-none">Inicio</button>
+            <button type="button" @click="goInicio" class="btn btn-link px-3 me-2 text-decoration-none text-white">Inicio</button>
             </li>
             <li class="nav-item">
-            <button type="button" @click="goHogar" class="btn btn-link px-3 me-2 text-decoration-none">Hogar</button>
+            <button type="button" @click="goHogar" class="btn btn-link px-3 me-2 text-decoration-none text-white">Hogar</button>
             </li>
             <li class="nav-item">
-              <button type="button" @click="goAlimentacion" class="btn btn-link px-3 me-2 text-decoration-none">Alimentación</button>
+              <button type="button" @click="goAlimentacion" class="btn btn-link px-3 me-2 text-decoration-none text-white">Alimentación</button>
             </li>
             <li class="nav-item">
-            <button type="button" @click="goModa" class="btn btn-link px-3 me-2 text-decoration-none">Moda</button>
+            <button type="button" @click="goModa" class="btn btn-link px-3 me-2 text-decoration-none text-white">Moda</button>
             </li>
             <li class="nav-item">
-            <button type="button" @click="goConoce" class="btn btn-link px-3 me-2 text-decoration-none">Contáctanos</button>
+            <button type="button" @click="goConoce" class="btn btn-link px-3 me-2 text-decoration-none text-white">Contáctanos</button>
             </li>
           </ul>
 
