@@ -4,7 +4,7 @@
 
 import STORAGE from "../utils/storage.js";
 
-export default Vue.component("footer", {
+export default Vue.component("piepagina", {
   props: [],
   data: function () {
     return {

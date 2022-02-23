@@ -1,5 +1,5 @@
-// import CLIENT from "../api/client.js";
-// import STORAGE from "../utils/storage.js";
+import CLIENT from "../api/client.js";
+import STORAGE from "../utils/storage.js";
 
 export default Vue.component("login-page", {
   data: function () {
@@ -40,7 +40,7 @@ export default Vue.component("login-page", {
     // Verifica si el usuario esta loggeado a través del token
     // const is_logged = !(STORAGE.get("token") == null);
     // if (is_logged) {
-    //   this.$router.push("products");
+    //   this.$router.push("inicio.js");
     // }
   },
   template: `

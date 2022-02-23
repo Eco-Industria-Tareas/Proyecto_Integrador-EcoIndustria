@@ -1,7 +1,9 @@
 export default Vue.component("inicio", {
     data: function () {
       return {
-        
+        products: [],
+        search: "",
+        category: {},
       };
     },
     methods: {
@@ -54,10 +56,10 @@ export default Vue.component("inicio", {
         // Actualizamos la lista de productos
         await this.getProducts();
       },
-      newProduct(){
-        STORAGE.remove("product");
-        this.$router.push("products/edit")
-      }
+      // newProduct(){
+      //   STORAGE.remove("product");
+      //   this.$router.push("products/edit")
+      // }
     },
     created: async function () {
       let vm = this;
