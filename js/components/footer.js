@@ -53,13 +53,13 @@ export default Vue.component("footer", {
       <div class="text-white">
           <div class="d-flex">
             <div class="d-flex flex-column align-items-center">
-              <a href="https://www.instagram.com" target="_blank" class="fs-1 bi bi-instagram fw-bolder text-white text-decoration-none" aria-hidden="true"></a>
+              <a href="https://www.instagram.com/ecoindustria_store/?hl=es-la" target="_blank" class="fs-1 bi bi-instagram fw-bolder text-white text-decoration-none" aria-hidden="true"></a>
             </div>
             <div class="d-flex flex-column align-items-center ms-5 me-5">
               <a href="https://www.facebook.com" target="_blank" class="fs-1 bi bi-facebook fw-bolder text-white text-decoration-none" aria-hidden="true"></a>
             </div>
             <div class="d-flex flex-column align-items-center me-5">
-              <a href="mailto:ra305169@gmail.com?Subject=Atención" target="_blank" class="fs-1 bi bi-envelope fw-bolder text-white text-decoration-none" aria-hidden="true"></a>
+              <a href="mailto:ecoindustriamanage@gmail.com?Subject=Atención al Cliente" target="_blank" class="fs-1 bi bi-envelope fw-bolder text-white text-decoration-none" aria-hidden="true"></a>
             </div>
             <div class="d-flex flex-column align-items-center me-5">
               <a @click="goBlog" class="fs-1 bi bi-newspaper fw-bolder text-white text-decoration-none" aria-hidden="true"></a>
