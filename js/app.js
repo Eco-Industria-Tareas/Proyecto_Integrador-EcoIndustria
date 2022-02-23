@@ -36,7 +36,7 @@ var router = new VueRouter({
 
 var app = new Vue({
   el: "#app",
-  components: { Navbar ,piepagina},
+  components: { Navbar , piepagina},
 
   router: router,
 });

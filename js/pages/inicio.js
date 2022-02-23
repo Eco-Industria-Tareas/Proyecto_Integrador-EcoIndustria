@@ -19,7 +19,7 @@ export default Vue.component("inicio", {
       async getProducts() {
         let vm = this;
   
-        let url = "/products/products/";
+        let url = "/listar_productos";
         url += "?search=" + vm.search;
         if (vm.current_category.name != "Todos") {
           url += "&category=" + vm.current_category.pk;
