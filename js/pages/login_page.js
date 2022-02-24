@@ -4,7 +4,7 @@ import STORAGE from "../utils/storage.js";
 export default Vue.component("login-page", {
   data: function () {
     return {
-      username: "",
+      mail: "",
       password: "",
     };
   },
@@ -55,9 +55,9 @@ export default Vue.component("login-page", {
                         </div>
                         <div  class="d-flex flex-column mt-3 p-3">
                             <label for="">Correo Electrónico</label>
-                            <input  class="form-control form-label readonly " type="text" placeholder="Correo Electrónico o número de teléfono"required/>
+                            <input  class="form-control form-label readonly " type="text" placeholder="mail@mail.com"required/>
                             <label for="" class="mt-2">Contraseña</label>
-                            <input  class="form-control form-label readonly " type="password" placeholder="Password"required/>
+                            <input  class="form-control form-label readonly " type="password" placeholder="********"required/>
                         </div>
 
                         <div class="col-md-12 d-flex justify-content-center">

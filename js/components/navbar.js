@@ -5,7 +5,7 @@
 // import STORAGE from "../utils/storage.js";
 
 export default Vue.component("navbar", {
-  props: ["onKeyup"],
+  props: [""],
   data: function () {
     return {
       // username: "",
@@ -91,7 +91,7 @@ export default Vue.component("navbar", {
           </ul>
 
           <form class="d-flex">
-            <input class="form-control me-2" type="text" placeholder="Buscar..." aria-label="search" @keyup="onKeyup" >
+            <input class="form-control me-2" type="text" placeholder="Buscar..." aria-label="search" >
             <button class="btn bg_secondary me-4 text-white" type="submit"><i class="bi bi-search"></i></button>
 
             <div class="d-flex me-2">

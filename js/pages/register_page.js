@@ -62,14 +62,14 @@ export default Vue.component("register-page", {
             <h4 class="d-flex justify-content-center mb-5 cl_fourth font_mochiy h3">REGÍSTRATE</h4>
             <div class="row">
 
-              <div class="mb-3 col-md-6">
+              <div class="mb-3 col-md-12">
                 <label>Nombre de usuario</label>
                 <input type="text" name="name" class="form-control" v-model="username" placeholder="Nombre de usuario">
               </div>
 
               <div class="mb-3 col-md-6">
-                <label>Primer Nombre</label>
-                <input type="text" name="fname" class="form-control" v-model="first_name" placeholder="Primer Nombre">
+                <label>Nombre</label>
+                <input type="text" name="fname" class="form-control" v-model="first_name" placeholder="Nombre">
               </div>
 
               <div class="mb-3 col-md-6">
@@ -79,7 +79,7 @@ export default Vue.component("register-page", {
 
               <div class="mb-3 col-md-12">
                 <label>Email</label>
-                <input type="text" name="password" class="form-control" v-model="mail" placeholder="Email">
+                <input type="text" name="password" class="form-control" v-model="mail" placeholder="email@mail.com">
               </div>
 
               <div class="mb-3 col-md-12">
@@ -89,7 +89,7 @@ export default Vue.component("register-page", {
 
               <div class="mb-3 col-md-12">
                 <label>Contraseña</label>
-                <input type="password" name="password" class="form-control" v-model="password" placeholder="Introduce tu nueva contraseña">
+                <input type="password" name="password" class="form-control" v-model="password" placeholder=" ********">
               </div>
 
               <div class="form-check d-flex justify-content-center">
