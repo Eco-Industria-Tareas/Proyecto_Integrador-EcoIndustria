@@ -49,8 +49,8 @@
      },
      template: `
      <div class="container">
-        <div class="my-5 text_primary text-center image_back">
-            <h4 class="font_mochiy">Quieres publicar tus productos??</h4>
+        <div class="mt-5 text_primary text-center image_back">
+            <h4 class="font_mochiy">¿Quieres publicar tus productos?</h4>
             <p class="text-secondary">Por favor llena el siguiente formulario para que nuestro equipo se comunique contigo! </p>
         </div>
 
@@ -59,8 +59,8 @@
           <div class="col-md-6 offset-md-3">
             <div  class="signup-form image_back">
 
-              <form class="form mt-5 border p-4 bg-light shadow-lg">
-                <h5 class="d-flex justify-content-center mb-5 cl_fourth font_mochiy text-success">Formulario de contacto</h5>
+              <form class="form  border p-4 bg-light shadow-lg">
+                <h5 class="d-flex justify-content-center mb-3 cl_fourth font_mochiy text-success">Formulario de contacto</h5>
                 <div class="row">
 
                   <div class="form-group mb-3 col-md-6">
@@ -74,23 +74,26 @@
                   </div>
     
                   <div class="form-group mb-3 col-md-12">
-                    <label>Correo electronico</label>
-                    <input type="text" name="password" class="form-control" placeholder="usuario@mail.com">
-                  </div>
-    
-                  <div class="form-group mb-3 col-md-12">
                     <label>Número de teléfono</label>
                     <input type="text" name="password" class="form-control" placeholder="12345678">
+                  </div>
+
+                  <div class="form-group mb-3 col-md-12">
+                    <label>Correo electrónico</label>
+                    <input type="text" name="password" class="form-control" placeholder="usuario@mail.com">
                   </div>
     
                   <div class="form-group mb-3 col-md-12">
                     <label>Contraseña</label>
                     <input type="password" name="password" class="form-control" placeholder="********">
                   </div>
+
                   <div class="form-group mb-3 col-md-12">
-                    <label>Confirma tu Contraseña</label>
-                    <input type="password" name="confirmpassword" class="form-control" placeholder="********">
+                    <label>¿Porqué quieres publicar tus productos con nosotros?</label>
+                    <textarea rows="3" cols="50" class="form-control" placeholder="Escribe tu comentario"></textarea>                  
                   </div>
+
+                  
     
                   <div class="form-check d-flex justify-content-center">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>

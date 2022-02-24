@@ -10,6 +10,7 @@ import inicio from "./pages/inicio.js";
 import ProductView from "./pages/product_view.js";
 import piepagina from "./components/footer.js";
 import conocenos from "./pages/conocenos.js";
+import Shop from "./pages/shop.js";
 // import Blog from  "./"
 
 
@@ -19,6 +20,7 @@ var routes = [
   { path: "/register", component: RegisterPage },
   { path: "/login_page", component: LoginPage},
   { path: "/product-view", component: ProductView},
+  { path: "/shop", component: Shop},
   { path: "/alimentacion", component: alimentacion},
   { path: "/hogar", component: hogar},
   { path: "/moda", component: moda},

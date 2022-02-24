@@ -44,6 +44,9 @@ export default Vue.component("navbar", {
     goBack() {
       this.$router.push("/");
     },
+    goShop() {
+      this.$router.push("/shop");
+    },
     // goRegister() {
     //   // Redirige al usuario al listado de productos
     //   this.$router.push("register");
@@ -95,17 +98,17 @@ export default Vue.component("navbar", {
             <button class="btn bg_secondary me-4 text-white" type="submit"><i class="bi bi-search"></i></button>
 
             <div class="d-flex me-2">
-            <button id="btn_cart" class="btn bg_secondary">
-              <a href="cart.html" class="bi bi-cart-fill text-white">
-              
-              </a>
+            <button id="btn_cart" class="btn bg_secondary" @click="goShop">
+              <i  class="bi bi-cart-fill text-white"></i>
+            </button>
+            </div>
+            <div class="d-flex me-2">
+            <button id="btn_cart" class="btn bg_secondary" @click="goLogin">
+              <i  class="bi bi-person-fill text-white"></i>
             </button>
             </div>
 
-            <div class="d-flex me-2">
-              <button id="btn_cart" class="btn bg_secondary bi bi-person-fill text-white" @click="goLogin" style="width:10vh;">
-              </button>
-              </div>
+
           </form>
         </div>
       </div>
