@@ -3,33 +3,54 @@ import CLIENT from "../api/client.js";
 export default Vue.component("register-page", {
   data: function () {
     return {
-      // username: "",
-      // email: "",
-      // password: "",
-      // is_staff: false,
+      username: "",
+      password: "",
+      mail: "",
+      first_name: "",
+      last_name: "",
+      phone_number: "",
+      has_error: false
     };
   },
   methods: {
-    // async createUser() {
-    //   let vm = this;
-    //   try {
-    //     await CLIENT.post("/authentication/sign-up/", {
-    //       "username": vm.username,
-    //       "email":vm.email,
-    //       "password":vm.password,
-    //       "is_staff" : vm.is_staff,
-    //     });
-    //     alert("Usuario creado correctamente");
-    //     vm.$router.push("/");
-    //   } catch (e) {
+    goLogin() {
+      this.$router.push("/inicio");
+    },
+    iniciarSecion: function () {
+      var self = this
+      fetch('https://api-eco-industria.herokuapp.com/add_usuarios',{
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body : JSON.stringify({
+          username: this.username,
+          password: this.password,
+          mail: this.mmail,
+          first_name:this.first_name,
+          last_name: this.last_name,
+          phone_number: this.phone_number
+        })
+      })
+      .then(function (response) {
+        console.log(response.status)
+        if (response.status ==400) {
+          self.has_error = true
+        }
+        return response.json()
+      })
+      .then(function (data) {
+        if (self.has_error == false) {
+          self.$router.push('/inicio')
+        } else {
+          self.error = data.detail
+        }
         
-    //     alert("Upps hubo un error: " + e.message)
-    //     console.info(e);
-    //   }
-    // },
-    // goLogin() {
-    //   this.$router.push("/");
-    // },
+      })
+      .catch(function (error) {
+        console.log("Error: ", error)
+      })
+    },
   },
   created: function () {},
   template: `
