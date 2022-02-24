@@ -64,7 +64,7 @@ export default Vue.component("navbar", {
   },
   template: `
 
-  <div>
+  <div class="sticky-top">
     <nav class="navbar navbar-expand-lg degradado shadow-lg sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand  text-white fw-bolder fs-3" href="../../index.html">ECO-INDUSTRY</a>
