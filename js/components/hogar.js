@@ -88,7 +88,7 @@ export default Vue.component("hogar", {
                             </div>
                             <span id="precio" class="mb-2">$50.00</span>
                             <div class="col-md-12 d-flex justify-content-center mb-2">
-                                <button class="btn-dark bg_primary fw-bolder  rounded ">
+                                <button @click="goProduct" class="btn-dark bg_primary fw-bolder  rounded ">
                                     Ver Producto
                                 </button>
                             </div>
@@ -110,7 +110,7 @@ export default Vue.component("hogar", {
                             </div>
                             <span id="precio" class="mb-2">$50.00</span>
                             <div class="col-md-12 d-flex justify-content-center mb-2">
-                                <button class="btn-dark bg_primary fw-bolder  rounded ">
+                                <button @click="goProduct" class="btn-dark bg_primary fw-bolder  rounded ">
                                     Ver Producto
                                 </button>
                             </div>
@@ -132,7 +132,7 @@ export default Vue.component("hogar", {
                             </div>
                             <span id="precio" class="mb-2">$50.00</span>
                             <div class="col-md-12 d-flex justify-content-center mb-2">
-                                <button class="btn-dark bg_primary fw-bolder  rounded ">
+                                <button @click="goProduct" class="btn-dark bg_primary fw-bolder  rounded ">
                                     Ver Producto
                                 </button>
                             </div>
@@ -154,7 +154,7 @@ export default Vue.component("hogar", {
                             </div>
                             <span id="precio" class="mb-2">$50.00</span>
                             <div class="col-md-12 d-flex justify-content-center mb-2">
-                                <button class="btn-dark bg_primary fw-bolder  rounded ">
+                                <button @click="goProduct" class="btn-dark bg_primary fw-bolder  rounded ">
                                     Ver Producto
                                 </button>
                             </div>
@@ -176,7 +176,7 @@ export default Vue.component("hogar", {
                             </div>
                             <span id="precio" class="mb-2">$50.00</span>
                             <div class="col-md-12 d-flex justify-content-center mb-2">
-                                <button class="btn-dark bg_primary fw-bolder  rounded ">
+                                <button @click="goProduct" class="btn-dark bg_primary fw-bolder  rounded ">
                                     Ver Producto
                                 </button>
                             </div>

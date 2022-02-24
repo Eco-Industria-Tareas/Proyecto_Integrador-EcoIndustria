@@ -13,6 +13,9 @@ export default Vue.component("inicio", {
       goHogar() {
         this.$router.push("/hogar");
       },
+      goProduct(){
+        this.$router.push("/product-view")
+      },
       async setCategory(category) {
         let vm = this;
         vm.current_category = category;
@@ -162,56 +165,80 @@ export default Vue.component("inicio", {
             </div>
 
             <div class="d-flex justify-content-around row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
-              <div class="col mb-8">
-                <div class="card shadow-lg rounded-3">
-                  <img class="img-thumbnail" src="https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/article/55365cdd3787b2187a1f0f54/alimentos-ecologicos-vs.jpg" alt="..." />
-                  <div class="card-body text-center">
-                    <h5 > Canasta de Verduras </h5>
-                    <div class="d-flex justify-content-center text-warning small">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star"></i>
-                      <span class="px-3 text-dark">4</span>
+              
+            <div class="col mb-5" >
+                        <div class="card h-100 p-2 shadow-lg d-flex align-items-center ">
+                            <img src="https://tienda.oxfamintermon.org/7684-large_default/funda-cojin-estampado-beige-heyagonal.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
+                            <div class="card-body">
+                                <p class="card-text fw-bolder text-center">Funda Cojín</p>
+                                  <div class="d-flex justify-content-center text-warning small">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <span class="px-3 text-dark">3</span>
+                                  </div>
+                            </div>
+                            <span id="precio" class="mb-2">$50.00</span>
+                            <div class="col-md-12 d-flex justify-content-center mb-2">
+                                <button @click="goProduct" class="btn-dark bg_primary fw-bolder  rounded ">
+                                    Ver Producto
+                                </button>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="col mb-5" >
+                        <div class="card h-100 p-2 shadow-lg d-flex align-items-center ">
+                            <img src="https://tienda.oxfamintermon.org/4729-large_default/camiseta-kid-organic-akira-amarillo-e.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
+                            <div class="card-body">
+                                <p class="card-text fw-bolder text-center">Camisa Niño</p>
+                                  <div class="d-flex justify-content-center text-warning small">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <span class="px-3 text-dark">3</span>
+                                  </div>
+                            </div>
+                            <span id="precio" class="mb-2">$50.00</span>
+                            <div class="col-md-12 d-flex justify-content-center mb-2">
+                                <button @click="goProduct" class="btn-dark bg_primary fw-bolder  rounded ">
+                                    Ver Producto
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <span id="precio">$50.00</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col mb-8">
-                <div class="card shadow-lg rounded-3">
-                  <img class="img-thumbnail" src="https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/article/55365cdd3787b2187a1f0f54/alimentos-ecologicos-vs.jpg" alt="..."/>
-                  <div class="card-body text-center">
-                    <h5> Canasta de Verduras</h5>
-                    <div class="d-flex justify-content-center text-warning small">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star"></i>
-                      <span class="px-3 text-dark">4</span>
+
+                    <div class="col mb-5" >
+                        <div class="card h-100 p-2 shadow-lg d-flex align-items-center ">
+                            <img src="https://tienda.oxfamintermon.org/315-large_default/cafe-oxfam-intermon-molido-biologico.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
+                            <div class="card-body">
+                                <p class="card-text fw-bolder text-center">Café Molido Biológico</p>
+                                  <div class="d-flex justify-content-center text-warning small">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <span class="px-3 text-dark">3</span>
+                                  </div>
+                            </div>
+                            <span id="precio" class="mb-2">$50.00</span>
+                            <div class="col-md-12 d-flex justify-content-center mb-2">
+                                <button @click="goProduct" class="btn-dark bg_primary fw-bolder  rounded ">
+                                    Ver Producto
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <span id="precio">$50.00</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col mb-8">
-                <div class="card shadow-lg rounded-3">
-                  <img class="img-thumbnail" src="https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/article/55365cdd3787b2187a1f0f54/alimentos-ecologicos-vs.jpg" alt="..." />
-                  <div class="card-body text-center">
-                  <h5>Canasta de Verduras</h5>
-                  <div class="d-flex justify-content-center text-warning small">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star"></i>
-                    <span class="px-3 text-dark">4</span>
-                  </div>
-                  <span id="precio">$50.00</span>
-                </div>
-              </div>
+
+             
+
+
+
             </div>
           </div>
 
@@ -220,7 +247,7 @@ export default Vue.component("inicio", {
               VER MÁS
             </button>
           </div>
-          </div>
+
         </section>
       </section>
 
