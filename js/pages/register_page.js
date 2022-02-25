@@ -3,8 +3,8 @@ import CLIENT from "../api/client.js";
 export default Vue.component("register-page", {
   data: function () {
     return {
-      username: "",
-      password: "",
+      uname: "",
+      passw: "",
       mail: "",
       first_name: "",
       last_name: "",
@@ -14,7 +14,7 @@ export default Vue.component("register-page", {
   },
   methods: {
     goLogin() {
-      this.$router.push("/inicio");
+      this.$router.push("/");
     },
     iniciarSecion: function () {
       var self = this
@@ -24,8 +24,8 @@ export default Vue.component("register-page", {
           'Content-Type': 'application/json'
         },
         body : JSON.stringify({
-          username: this.username,
-          password: this.password,
+          uname: this.uname,
+          passw: this.passw,
           mail: this.mail,
           first_name:this.first_name,
           last_name: this.last_name,
@@ -41,7 +41,7 @@ export default Vue.component("register-page", {
       })
       .then(function (data) {
         if (self.has_error == false) {
-          self.$router.push('/inicio')
+          self.$router.push('/')
         } else {
           self.error = data.detail
         }
@@ -64,7 +64,7 @@ export default Vue.component("register-page", {
 
               <div class="mb-3 col-md-12">
                 <label>Nombre de usuario</label>
-                <input type="text" name="name" class="form-control" v-model="username" placeholder="Nombre de usuario">
+                <input type="text" name="name" class="form-control" v-model="uname" placeholder="Nombre de usuario">
               </div>
 
               <div class="mb-3 col-md-6">
@@ -89,7 +89,7 @@ export default Vue.component("register-page", {
 
               <div class="mb-3 col-md-12">
                 <label>Contraseña</label>
-                <input type="password" name="password" class="form-control" v-model="password" placeholder=" ********">
+                <input type="password" name="password" class="form-control" v-model="passw" placeholder=" ********">
               </div>
 
               <div class="form-check d-flex justify-content-center">
