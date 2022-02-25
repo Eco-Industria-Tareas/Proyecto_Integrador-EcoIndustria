@@ -137,11 +137,11 @@ export default Vue.component("cart", {
         </div>
 
         <div class="col-md-12 d-flex justify-content-center my-2">
-            <button @click="goHogar" class="mx-1 btn btn-warning font_mochiy  text-white " style="width: 90%; height: 6vh;">
+            <button @click="goHogar" class="mx-1 btn btn_fourth font_mochiy " style="width: 90%; height: 6vh;">
               Agregar
             </button>
 
-            <button @click="goShop" class="mx-1 btn btn-success font_mochiy text-white " style="width: 90%; height: 6vh;">
+            <button @click="goShop" class="mx-1 btn btn_primary font_mochiy text-white " style="width: 90%; height: 6vh;">
                 Comprar
             </button>
 

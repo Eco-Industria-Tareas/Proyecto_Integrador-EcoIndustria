@@ -90,3 +90,32 @@ body {
 .fs-s{
     font-size:xx-small;
 }
+
+.btn_fourth,
+.btn_fourth:active {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: var(--fourth);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.btn_fourth:hover {
+    background-color: #e6a20496;
+    color: white;
+}
+.btn_primary,
+.btn_primary:active {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: var(--primary);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.btn_primary:hover {
+    background-color: var(--tertiary);
+    color: white;
+}
