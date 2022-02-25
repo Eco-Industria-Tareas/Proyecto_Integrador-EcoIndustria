@@ -75,7 +75,30 @@ export default Vue.component("navbar", {
           <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 bg_secondary">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <button type="button" @click="goInicio" class=" btn btn-link px-3 me-2 text-decoration-none text-white">Inicio</button>
+              </li>
+ 
+              <li class="nav-item dropdown">
+                <button type="button" class="dropdown-toggle btn btn-link px-3 me-2 text-decoration-none text-white" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">            
+                  Categorías
+                </button>
+
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><button class="dropdown-item" @click="goHogar"><i class="bi bi-house-door-fill me-2"></i>Hogar</button></li>
+                  <li><button class="dropdown-item" @click="goAlimentacion"><i class="fa fa-utensils me-2"></i>Alimentación</button></li>
+                  <li><button class="dropdown-item"  @click="goModa" ><i class="fa fa-socks me-2"></i>Moda</button></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><button class="dropdown-item" @click="goConoce"><i class="bi bi-box-arrow-in-up me-2"></i>Publicar</button></li>
+                </ul>
+              </li>
+            </ul>
+
+          </div>
+
+          <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0 bg_secondary">
             <li class="nav-item">
             <button type="button" @click="goInicio" class="btn btn-link px-3 me-2 text-decoration-none text-white">Inicio</button>
             </li>
@@ -91,7 +114,7 @@ export default Vue.component("navbar", {
             <li class="nav-item">
             <button type="button" @click="goConoce" class="btn btn-link px-3 me-2 text-decoration-none text-white">Contáctanos</button>
             </li>
-          </ul>
+          </ul> -->
 
           <form class="d-flex">
             <input class="form-control me-2" type="text" placeholder="Buscar..." aria-label="search" >
@@ -107,8 +130,6 @@ export default Vue.component("navbar", {
               <i  class="bi bi-person-fill text-white"></i>
             </button>
             </div>
-
-
           </form>
         </div>
       </div>
