@@ -2,7 +2,8 @@ export default Vue.component("inicio", {
     data: function () {
       return {
         products: [],
-        search: "",
+        token: localStorage.getItem("token"),
+        query: '',
         category: {},
       };
     },
@@ -65,19 +66,25 @@ export default Vue.component("inicio", {
       // }
     },
     created: async function () {
-      let vm = this;
-      try {
-        // Cargar la lista de categorias
-        await vm.getCategories();
-        // Cargar la lista de productos
-        await vm.getProducts();
-        // Desactivar el Loader
-        vm.loading = false;
-      } catch (e) {
-        //En caso haya un error en las busquedas
-        //Se notifica por consola el incidente
-        console.warn(e);
-      }
+      var self = this;
+      fetch('https://api-eco-industria.herokuapp.com/productos',{
+        method: 'GET',
+        headers : {
+          "Content-Type": "application/json",
+          "Authorization": "Token " + this.token
+        }
+      })
+      .then(function(response){
+        return response.json()
+      })
+      .then(function(data){
+        self.products = data;
+        self.isLoading=false;
+      })
+      .catch(function(error) {
+        console.log("Error: " + error)
+      })
+      
     },
     template: `
     <div>
