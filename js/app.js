@@ -11,6 +11,7 @@ import ProductView from "./pages/product_view.js";
 import piepagina from "./components/footer.js";
 import conocenos from "./pages/conocenos.js";
 import Shop from "./pages/shop.js";
+import whatsapp from "./components/whatsapp.js";
 // import Blog from  "./"
 
 

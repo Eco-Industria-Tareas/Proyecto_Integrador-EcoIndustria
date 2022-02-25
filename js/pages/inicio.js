@@ -1,3 +1,4 @@
+
 export default Vue.component("inicio", {
     data: function () {
       return {
@@ -120,6 +121,9 @@ export default Vue.component("inicio", {
       <!-- CONTENT (CUERPO) -->
       <section class="m-2">
 
+        <whatsapp></whatsapp>
+
+        
         <!--Recomendaciones-->
         <section class="mt-4 py-3 bg_tertiary rounded-3">
           <div class="container mt-10 ">

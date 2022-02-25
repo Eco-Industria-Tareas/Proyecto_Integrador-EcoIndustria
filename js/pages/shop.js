@@ -54,15 +54,24 @@ export default Vue.component("shop", {
                 <label for="">No. de Orden</label>
                   <p  class="form-control form-label readonly "> 001 </p>
                 <label for="" class="mt-2">Tipo de pago</label>
-                  <div>
-                    <input  class="" type="checkbox"required/>
+
+                  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-warning text-dark" for="btnradio1">Tarjeta</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-warning text-dark" for="btnradio2">Efectivo</label>
+                    
                   </div>
-                <label for="" class="mt-2">Dirección</label>
-                  <input  class="form-control form-label readonly " type="text"required/>
-                <label for="" class="mt-2">País</label>
-                  <input  class="form-control form-label readonly " type="text"required/>
-                <label for="" class="mt-2">Ciudad</label>
-                  <input  class="form-control form-label readonly " type="text"required/>
+ 
+                <label for="" class="mt-2">Fecha</label>
+                  <input  class="form-control form-label readonly " type="date"required/>
+
+                <label for="" class="mt-2">Total de la compra en Q:</label>
+                  <p  class="form-control form-label readonly ">
+                    200
+                  </p> 
               </div>
 
               <div class="col-md-12 d-flex justify-content-center my-2">
