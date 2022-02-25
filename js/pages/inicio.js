@@ -181,7 +181,7 @@ export default Vue.component("inicio", {
             <div class="d-flex justify-content-around row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 row-cols-xl-4">
 
               <div class="h-100  py-2"  v-for="product in products" :key="product.id">
-                <div class= "bg-dark col mb-5" >
+                <div class="col mb-5" >
                 
                   <div class="card h-100 p-2 shadow-lg d-flex align-items-center ">
                     <img  v-bind:src="product.photo_1" class="card-img-top img-fluid img-thumbnail" alt="...">
