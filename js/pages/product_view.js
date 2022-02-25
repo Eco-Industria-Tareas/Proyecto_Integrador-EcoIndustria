@@ -85,14 +85,6 @@ export default Vue.component("product-view", {
                                     </li>
                                 </ul>
 
-                                <div>
-                                    <p> Cantidad
-                                        <br />
-                                        <button type="button" class="btn bg_tertiary  ">+</button>
-                                        <span class="badge rounded-pill bg_tertiary ms-1 text-dark"> 1 </span>
-                                        <button type="button" class="btn bg_tertiary  ">-</button>
-                                    </p>
-                                </div>
 
                                 <button class="btn bg_fourth fw-bold my-1" style="width: 90%">
                                     Agregar al Carrito
@@ -106,7 +98,5 @@ export default Vue.component("product-view", {
                 </div>
             </div>
         </section>
-          
       `,
   });
-  

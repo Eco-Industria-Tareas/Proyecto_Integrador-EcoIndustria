@@ -93,7 +93,7 @@ export default Vue.component("inicio", {
             <img src="https://actoressostenibles.com/wp-content/uploads/2019/08/banner-banco-pichincha.png" class="d-block w-100" style="height: 70vh;" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="https://www.isglobal.org/documents/10179/6939518/sdg+13+grande+es/cba42d02-4e25-4cc3-b045-a4f1a9f0ed40?t=1539694658000" class="d-block w-100" style="height: 70vh;" alt="...">
+            <img src="https://res.cloudinary.com/dpcgnjy8h/image/upload/v1645761906/carrousel/imagen04_ect4xf.png" class="d-block w-100" style="height: 70vh;" alt="...">
           </div>
           <div class="carousel-item">
             <img src="https://mfiles.iica.int/CTL/GESECAA/bannerok.jpg" class="d-block w-100" style="height: 70vh;" alt="...">

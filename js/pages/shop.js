@@ -51,10 +51,12 @@ export default Vue.component("shop", {
               </div>
                       
               <div  class="d-flex flex-column mt-3 p-3">
-                <label for="">Nombre Completo</label>
-                  <input  class="form-control form-label readonly " type="text" required/>
-                <label for="" class="mt-2">Número de teléfono</label>
-                  <input  class="form-control form-label readonly " type="text"required/>
+                <label for="">No. de Orden</label>
+                  <p  class="form-control form-label readonly "> 001 </p>
+                <label for="" class="mt-2">Tipo de pago</label>
+                  <div>
+                    <input  class="" type="checkbox"required/>
+                  </div>
                 <label for="" class="mt-2">Dirección</label>
                   <input  class="form-control form-label readonly " type="text"required/>
                 <label for="" class="mt-2">País</label>
