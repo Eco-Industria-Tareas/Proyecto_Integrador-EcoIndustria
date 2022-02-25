@@ -8,6 +8,14 @@ export default Vue.component("product-view", {
     },
     methods: {
 
+        goShop() {
+            this.$router.push("/shop");
+          },
+        goCart() {
+            this.$router.push("/cart");
+          },
+
+
  
     },
     created: function () {
@@ -86,10 +94,10 @@ export default Vue.component("product-view", {
                                 </ul>
 
 
-                                <button class="btn bg_fourth fw-bold my-1" style="width: 90%">
+                                <button @click="goCart" class="btn bg_fourth fw-bold my-1" style="width: 90%">
                                     Agregar al Carrito
                                 </button>
-                                <button class="btn bg_primary fw-bold my-1"style="width: 90%">
+                                <button @click="goShop" class="btn bg_primary fw-bold my-1"style="width: 90%">
                                     Realizar Compra
                                 </button>
                             </div>
