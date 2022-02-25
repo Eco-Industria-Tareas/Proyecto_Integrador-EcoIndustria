@@ -48,8 +48,8 @@ export default Vue.component("piepagina", {
     // }, 1000);
   },
   template: `
-    <div>
-        <footer class="bg_secondary py-3 mt-5 d-flex flex-column align-items-center">
+
+    <footer class="bg_secondary py-3 mt-5 d-flex flex-column align-items-center">
       <div class="text-white">
           <div class="d-flex">
             <div class="d-flex flex-column align-items-center">
@@ -74,6 +74,6 @@ export default Vue.component("piepagina", {
         <p class="text-center mt-1">Copyright &copy; 2022 by <b>Eco-Industry</b> team.</p>
       </div>
     </footer>
-    </div>
+
     `,
 });
