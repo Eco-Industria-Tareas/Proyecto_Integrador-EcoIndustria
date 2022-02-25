@@ -4,49 +4,58 @@
 
    import STORAGE from "../utils/storage.js";
 
-   export default Vue.component("conocenos", {
-     props: [],
-     data: function () {
-       return {
-         // username: "",
-         // password: "",
-         // isLogged: false,
-         // current_path: false,
-       };
-     },
-     computed: {
-       // isRoot() {
-       //   return this.current_path == '/products' || this.current_path == '/'
-       // },
-     },
-     methods: {
-        regresar: function () {
-            this.$router.go(-1)
-          },
-       // goLogin() {
-       //   this.$router.push("/");
-       // },
-       // goBack() {
-       //   this.$router.push("/");
-       // },
-       // goRegister() {
-       //   // Redirige al usuario al listado de productos
-       //   this.$router.push("register");
-       // },
-       // logout() {
-       //   // Eliminamos el token de sesión
-       //   STORAGE.remove("token");
-       //   this.$router.push("/");
-       // },
-     },
-     mounted() {},
-     created: function () {
-       // Validamos el cambio en el Local Storage
-       // setInterval(() => {
-       //   this.isLogged = !(STORAGE.get("token") == null);
-       //   this.current_path = this.$router.history.current.path
-       // }, 1000);
-     },
+export default Vue.component("conocenos", {
+  data: function () {
+    return {
+      first_name: "",
+      last_name: "",
+      phone_number: "",
+      mail: "",
+      opinion: "",
+      has_error: false
+    };
+  },
+  methods: {
+    regresar: function () {
+      this.$router.go(-1)
+    },
+    goLogin() {
+      this.$router.push("/");
+    },
+    Proveedor: function () {
+      var self = this
+      fetch('https://api-eco-industria.herokuapp.com/add_proveedor',{
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          first_name:this.first_name,
+          last_name: this.last_name,
+          phone_number: this.phone_number,
+          mail: this.mail,
+          opinion: this.opinion
+        })
+      })
+      .then(function (response) {
+        console.log(response.status)
+        if (response.status ==400) {
+          self.has_error = true
+        }
+        return response.json()
+      })
+      .then(function (data) {
+        if (self.has_error == false) {
+          self.$router.push('/')
+        } else {
+          self.error = data.detail
+        }  
+      })
+      .catch(function (error) {
+        console.log("Error: ", error)
+      })
+    },
+  },
      template: `
      <div class="container">
         <div class="mt-5 text_primary text-center image_back">
@@ -65,36 +74,29 @@
 
                   <div class="form-group mb-3 col-md-6">
                     <label>Nombre</label>
-                    <input type="text" name="fname" class="form-control" placeholder="Nombre">
+                    <input type="text" name="fname" class="form-control" v-model="first_name" placeholder="Nombre">
                   </div>
     
                   <div class="form-group mb-3 col-md-6">
                     <label>Apellido</label>
-                    <input type="text" name="Lname" class="form-control" placeholder="Apellido">
+                    <input type="text" name="Lname" class="form-control" v-model="last_name" placeholder="Apellido">
                   </div>
     
                   <div class="form-group mb-3 col-md-12">
                     <label>Número de teléfono</label>
-                    <input type="text" name="password" class="form-control" placeholder="12345678">
+                    <input type="text" name="tel" class="form-control" v-model="phone_number" placeholder="12345678">
                   </div>
 
                   <div class="form-group mb-3 col-md-12">
                     <label>Correo electrónico</label>
-                    <input type="text" name="password" class="form-control" placeholder="usuario@mail.com">
+                    <input type="text" name="password" class="form-control" v-model="mail" placeholder="usuario@mail.com">
                   </div>
     
-                  <div class="form-group mb-3 col-md-12">
-                    <label>Contraseña</label>
-                    <input type="password" name="password" class="form-control" placeholder="********">
-                  </div>
-
                   <div class="form-group mb-3 col-md-12">
                     <label>¿Porqué quieres publicar tus productos con nosotros?</label>
-                    <textarea rows="3" cols="50" class="form-control" placeholder="Escribe tu comentario"></textarea>                  
+                    <textarea rows="3" cols="50" class="form-control" v-model="opinion" placeholder="Escribe tu comentario"></textarea>                  
                   </div>
-
-                  
-    
+  
                   <div class="form-check d-flex justify-content-center">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                     <label class="form-check-label cl_fourth" for="flexCheckChecked">
@@ -103,8 +105,8 @@
                   </div>
                   <br><br>
                   <div class="col-md-12 d-flex justify-content-center">
-                    <button class="btn bg_fourth font_mochiy " style="width: 90%; height: 6vh;">
-                      <a @click.prevent="regresar" class="text-dark text-decoration-none">Enviar</a>
+                    <button class="btn bg_fourth font_mochiy "  @click="Proveedor" type="button" style="width: 90%; height: 6vh;">
+                      <a href="#" class="text-dark text-decoration-none">Enviar</a>
                     </button>
                   </div>
                 </div>
