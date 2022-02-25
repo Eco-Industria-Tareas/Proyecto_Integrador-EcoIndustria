@@ -5,36 +5,33 @@ export default Vue.component("login-page", {
   data: function () {
     return {
       mail: "",
-      password: "",
+      passw: "",
     };
   },
   methods: {
     goRegister(){
       this.$router.push("/register")
     },
-    // DoLogin: async function () {
-    //   let vm = this;
-    //   try {
-    //     //Enviamos la petición Via POST
-    //     const response = await CLIENT.post("/authentication/login/", {
-    //       username: vm.username,
-    //       password: vm.password,
-    //     });
-    //     // Almacenamos el token si el inicio de sesión es correcto
-    //     STORAGE.set("token", response.token);
-    //     // Redirigimos al usuario al home
-    //     vm.$router.push("products");
-    //   } catch (e) {
-    //     //En caso haya un error en el inicio de sesión
-    //     // Notificamos por consola el incidente
-    //     console.warn(e);
-    //     alert("Error al iniciar sesión");
-    //   }
-    // },
-    // goRegister() {
-    //   // Redirige al usuario al listado de productos
-    //   this.$router.push("register");
-    // },
+    DoLogin: async function () {
+      let vm = this;
+      try {
+        //Enviamos la petición Via POST
+        const response = await CLIENT.post("autenticar", {
+          mail: vm.mail,
+          passw: vm.passw,
+
+        });
+        // Almacenamos el token si el inicio de sesión es correcto
+        STORAGE.set("token", response.token);
+        // Redirigimos al usuario al home
+        vm.$router.push("/");
+      } catch (e) {
+        //En caso haya un error en el inicio de sesión
+        // Notificamos por consola el incidente
+        console.warn(e);
+        alert("Error al iniciar sesión");
+      }
+    },
   },
   created: function () {
     // Verifica si el usuario esta loggeado a través del token
@@ -55,19 +52,19 @@ export default Vue.component("login-page", {
                         </div>
                         <div  class="d-flex flex-column mt-3 p-3">
                             <label for="">Correo Electrónico</label>
-                            <input  class="form-control form-label readonly " type="text" placeholder="mail@mail.com"required/>
+                            <input  class="form-control form-label readonly"  v-model="mail"  type="text" placeholder="mail@mail.com"required/>
                             <label for="" class="mt-2">Contraseña</label>
-                            <input  class="form-control form-label readonly " type="password" placeholder="********"required/>
+                            <input  class="form-control form-label readonly " type="password" v-model="passw" placeholder="********"required/>
                         </div>
 
                         <div class="col-md-12 d-flex justify-content-center">
-                            <button class="btn bg_fourth font_mochiy " style="width: 90%; height: 6vh;">
-                             <a href="../../index.html" class="text-dark text-decoration-none">Iniciar Sesión</a> 
+                            <button class="btn bg_fourth font_mochiy " @click="DoLogin" style="width: 90%; height: 6vh;">
+                             <a href="#" class="text-dark text-decoration-none">Iniciar Sesión</a> 
                            </button>
                          </div>
 
                         <div class="mt-3  d-flex justify-content-center">
-                          <label for="">¿No tienes cuenta?</label> 
+                          <label for="">¿No tienes cuenta? </label> 
                           <a @click="goRegister" class="text_secondary mb-3 fw-bolder">¡Click aquí!</a>
                         </div>
                     </form>

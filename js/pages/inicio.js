@@ -47,7 +47,7 @@ export default Vue.component("inicio", {
   
         //Enviamos la petición Via GET
         const response = await CLIENT.get(
-          "/products/categories/"
+          "/productos"
         );
         // Cargamos las categorias 
         vm.categories = response;
@@ -82,7 +82,7 @@ export default Vue.component("inicio", {
         return response.json()
       })
       .then(function(data){
-        self.products = data;
+        self.products = data.data;
         self.isLoading=false;
       })
       .catch(function(error) {
@@ -180,12 +180,13 @@ export default Vue.component("inicio", {
 
             <div class="d-flex justify-content-around row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 row-cols-xl-4">
 
-              <div class="h-100  py-2">
+              <div class="h-100  py-2" v-for="product in products" :key="product.id">
                 <div class= "bg-dark col mb-5" >
+                
                   <div class="card h-100 p-2 shadow-lg d-flex align-items-center ">
-                    <img src="https://tienda.oxfamintermon.org/7684-large_default/funda-cojin-estampado-beige-heyagonal.jpg" class="card-img-top img-fluid img-thumbnail" alt="...">
+                    <img src="{{ product.photo_1 }}" class="card-img-top img-fluid img-thumbnail" alt="...">
                     <div class="card-body">
-                      <p class="card-text fw-bolder text-center">Funda Cojín</p>
+                      <p class="card-text fw-bolder text-center">{{ product.name }}</p>
                       <div class="d-flex justify-content-center text-warning small">
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
@@ -195,7 +196,7 @@ export default Vue.component("inicio", {
                         <span class="px-3 text-dark">3</span>
                       </div>
                     </div>
-                    <span id="precio" class="mb-2">$50.00</span>
+                    <span id="precio" class="mb-2">Q {{product.price}}</span>
                     <div class="col-md-12 d-flex justify-content-center mb-2">
                       <button @click="goProduct" class="btn-dark bg_primary fw-bolder  rounded ">
                         Ver Producto
