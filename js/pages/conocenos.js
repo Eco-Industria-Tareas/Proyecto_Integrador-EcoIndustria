@@ -97,12 +97,10 @@ export default Vue.component("conocenos", {
                     <textarea rows="3" cols="50" class="form-control" v-model="opinion" placeholder="Escribe tu comentario"></textarea>                  
                   </div>
   
-                  <div class="form-check d-flex justify-content-center">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label cl_fourth" for="flexCheckChecked">
-                      Aceptar terminos y Condiciones.
-                    </label>
-                  </div>
+                  <div class=" text-muted d-flex justify-content-center fs-s">
+                <p class="">Al hacer clic en "Enviar", aceptas nuestras 
+                  <a class="color-primary" >Condiciones</a>, la <a class="color-primary">Política de datos</a> y la <a class="color-primary">Política de cookies</a>. Es posible que te enviemos notificaciones por SMS, que puedes desactivar cuando quieras.</p>
+              </div>
                   <br><br>
                   <div class="col-md-12 d-flex justify-content-center">
                     <button class="btn bg_fourth font_mochiy "  @click="Proveedor" type="button" style="width: 90%; height: 6vh;">
@@ -115,22 +113,6 @@ export default Vue.component("conocenos", {
           </div>
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
      </div>
 

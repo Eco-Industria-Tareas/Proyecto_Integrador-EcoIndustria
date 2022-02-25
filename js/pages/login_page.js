@@ -52,7 +52,7 @@ export default Vue.component("login-page", {
                         </div>
                         <div  class="d-flex flex-column mt-3 p-3">
                             <label for="">Correo Electrónico</label>
-                            <input  class="form-control form-label readonly"  v-model="mail"  type="text" placeholder="mail@mail.com"required/>
+                            <input  class="form-control form-label readonly"  v-model="mail"  type="text" placeholder="name@example.com"required/>
                             <label for="" class="mt-2">Contraseña</label>
                             <input  class="form-control form-label readonly " type="password" v-model="passw" placeholder="********"required/>
                         </div>
@@ -65,7 +65,7 @@ export default Vue.component("login-page", {
 
                         <div class="mt-3  d-flex justify-content-center">
                           <label for="">¿No tienes cuenta? </label> 
-                          <a @click="goRegister" class="text_secondary mb-3 fw-bolder">¡Click aquí!</a>
+                          <a  @click.prevent="goRegister" class="text_secondary mb-3 fw-bolder">¡Click aquí!</a>
                         </div>
                     </form>
                 </div>

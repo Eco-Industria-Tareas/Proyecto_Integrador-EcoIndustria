@@ -14,7 +14,7 @@ export default Vue.component("register-page", {
   },
   methods: {
     goLogin() {
-      this.$router.push("/");
+      this.$router.push("/login_page");
     },
     iniciarSecion: function () {
       var self = this
@@ -79,7 +79,7 @@ export default Vue.component("register-page", {
 
               <div class="mb-3 col-md-12">
                 <label>Email</label>
-                <input type="text" name="password" class="form-control" v-model="mail" placeholder="email@mail.com">
+                <input type="text" name="password" class="form-control" v-model="mail" placeholder="name@example.com">
               </div>
 
               <div class="mb-3 col-md-12">
@@ -91,12 +91,14 @@ export default Vue.component("register-page", {
                 <label>Contraseña</label>
                 <input type="password" name="password" class="form-control" v-model="passw" placeholder=" ********">
               </div>
+              <div class="mb-3 col-md-12">
+                <label>Confirmar contraseña</label>
+                <input type="password" name="password" class="form-control" v-model="passw" placeholder=" ********">
+              </div>
 
-              <div class="form-check d-flex justify-content-center">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                <label class="form-check-label cl_fourth" for="flexCheckChecked">
-                  Aceptar terminos y Condiciones.
-                </label>
+              <div class=" text-muted d-flex justify-content-center fs-s">
+                <p class="">Al hacer clic en "Registrarte", aceptas nuestras 
+                  <a class="color-primary" >Condiciones</a>, la <a class="color-primary">Política de datos</a> y la <a class="color-primary">Política de cookies</a>. Es posible que te enviemos notificaciones por SMS, que puedes desactivar cuando quieras.</p>
               </div>
               <br><br>
               <div class="col-md-12 d-flex justify-content-center">
@@ -104,6 +106,10 @@ export default Vue.component("register-page", {
                   <a href="#" class="text-dark text-decoration-none">Regístrarse</a>
                 </button>
               </div>
+              <div class="mt-3  d-flex justify-content-center">
+                          <label class="me-2" for="">¿Ya tienes una cuenta?</label> 
+                          <a href="#" @click.prevent="goLogin" class="text_secondary mb-3 fw-bolder">Inicia Sesión</a>
+                        </div>
             </div>
           </form>
         </div>
