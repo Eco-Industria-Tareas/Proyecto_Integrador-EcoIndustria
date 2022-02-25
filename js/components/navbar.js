@@ -47,6 +47,9 @@ export default Vue.component("navbar", {
     goShop() {
       this.$router.push("/shop");
     },
+    goCart() {
+      this.$router.push("/cart");
+    },
     // goRegister() {
     //   // Redirige al usuario al listado de productos
     //   this.$router.push("register");
@@ -121,7 +124,7 @@ export default Vue.component("navbar", {
             <button class="btn bg_secondary me-4 text-white" type="submit"><i class="bi bi-search"></i></button>
 
             <div class="d-flex me-2">
-            <button id="btn_cart" class="btn bg_secondary" @click="goShop">
+            <button id="btn_cart" class="btn bg_secondary" @click="goCart">
               <i  class="bi bi-cart-fill text-white"></i>
             </button>
             </div>

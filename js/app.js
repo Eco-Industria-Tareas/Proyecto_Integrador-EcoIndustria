@@ -11,6 +11,7 @@ import ProductView from "./pages/product_view.js";
 import piepagina from "./components/footer.js";
 import conocenos from "./pages/conocenos.js";
 import Shop from "./pages/shop.js";
+import Cart from "./pages/cart.js";
 import whatsapp from "./components/whatsapp.js";
 // import Blog from  "./"
 
@@ -22,11 +23,13 @@ var routes = [
   { path: "/login_page", component: LoginPage},
   { path: "/product-view", component: ProductView},
   { path: "/shop", component: Shop},
+  { path: "/cart", component: Cart},
   { path: "/alimentacion", component: alimentacion},
   { path: "/hogar", component: hogar},
   { path: "/moda", component: moda},
   { path: "/blog", component: blog},
   { path: "/conocenos", component: conocenos},
+
 ];
 /* Creamos el router del proyecto y
  cargamos las rutas disponibles */
