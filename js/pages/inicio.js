@@ -205,13 +205,12 @@ export default Vue.component("inicio", {
                   </div>
                 </div>
                 <div class="d-grid gap-2 col-6 mx-auto">
-                  <button type="button" @click="goHogar" class="btn btn-warning ">
-                    VER MÁS
-                  </button>
                 </div>
               </div>
+              <button type="button" @click="goHogar" class="btn bg_fourth shadow fw-bolder" styles="">
+                    VER MÁS
+                  </button>
             </div>
-
           </div>
         </section>
       </section>
