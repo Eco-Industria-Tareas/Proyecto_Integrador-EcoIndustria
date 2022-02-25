@@ -131,6 +131,11 @@ export default Vue.component("cart", {
 
         </div>
 
+        <div class="d-flex align-items-center justify-content-between m-2 p-2 ">
+            <strong class="h-100 p-2 fs-1 mx-4">Total</strong>
+            <p class=" h-100 p-2 fs-1 mx-4">Q 200</p> 
+        </div>
+
         <div class="col-md-12 d-flex justify-content-center my-2">
             <button @click="goHogar" class="mx-1 btn btn-warning font_mochiy  text-white " style="width: 90%; height: 6vh;">
               Agregar
