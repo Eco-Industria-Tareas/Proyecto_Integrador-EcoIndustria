@@ -90,7 +90,7 @@ export default Vue.component("alimentacion", {
     template: `
             <section>
             <div class="my-5 text_primary text-center">
-                    <h2 class="font_mochiy">ALIMENTACIÓN</h2>
+                    <h1 class="font_mochiy">ALIMENTACIÓN</h1>
                 </div>
             <div class="container mt-2" >
 

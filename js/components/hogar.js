@@ -86,7 +86,7 @@ export default Vue.component("hogar", {
     template: `
                 <section>
             <div class="my-5 text_primary text-center">
-                    <h2 class="font_mochiy">HOGAR</h2>
+                    <h1 class="font_mochiy">HOGAR</h1>
                 </div>
             <div class="container mt-2" >
 

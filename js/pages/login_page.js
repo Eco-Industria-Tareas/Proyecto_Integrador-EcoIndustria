@@ -42,10 +42,10 @@ export default Vue.component("login-page", {
   },
   template: `
   
-    <div class="container">
+    <div class="container ">
         <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <div class="signup-form image_back">
+            <div class="col-md-6 offset-md-3 ">
+                <div class="signup-form image_back mb-5">
                     <form name="Login in " action="send.php" method="post" class="d-flex flex-column img-thumbnail mt-5 shadow-lg">
                         <div class="d-flex justify-content-center font_mochiy h3 mt-4 ">
                             <h1>Iniciar Sesión</h1>
