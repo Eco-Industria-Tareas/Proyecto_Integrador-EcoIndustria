@@ -58,6 +58,7 @@ export default Vue.component("conocenos", {
   },
      template: `
      <div class="container">
+     <whatsapp></whatsapp>
         <div class="mt-5 text_primary text-center image_back">
             <h4 class="font_mochiy">¿Quieres publicar tus productos?</h4>
             <p class="text-secondary">Por favor llena el siguiente formulario para que nuestro equipo se comunique contigo! </p>
@@ -73,12 +74,12 @@ export default Vue.component("conocenos", {
                 <div class="row">
 
                   <div class="form-group mb-3 col-md-6">
-                    <label>Nombre</label>
+                    <label>Nombres</label>
                     <input type="text" name="fname" class="form-control" v-model="first_name" placeholder="Nombre">
                   </div>
     
                   <div class="form-group mb-3 col-md-6">
-                    <label>Apellido</label>
+                    <label>Apellidos</label>
                     <input type="text" name="Lname" class="form-control" v-model="last_name" placeholder="Apellido">
                   </div>
     
@@ -93,7 +94,7 @@ export default Vue.component("conocenos", {
                   </div>
     
                   <div class="form-group mb-3 col-md-12">
-                    <label>¿Porqué quieres publicar tus productos con nosotros?</label>
+                    <label>¿Porqué quieres asociarte con nosotros?</label>
                     <textarea rows="3" cols="50" class="form-control" v-model="opinion" placeholder="Escribe tu comentario"></textarea>                  
                   </div>
   

@@ -82,16 +82,6 @@ export default Vue.component("product-view", {
                                     </li>
                                 </ul>
 
-                                <ul class="list-inline">
-                                    <li class="list-inline-item">
-                                        <h6>CREADOR:</h6>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <p class="text-muted">
-                                            <strong>Juan Pérez</strong>
-                                        </p>
-                                    </li>
-                                </ul>
 
 
                                 <button @click="goCart" class="btn bg_fourth fw-bold my-1" style="width: 90%">

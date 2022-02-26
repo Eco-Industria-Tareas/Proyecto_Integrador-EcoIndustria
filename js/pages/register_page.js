@@ -56,6 +56,7 @@ export default Vue.component("register-page", {
   template: `
       <div class="container">
     <div class="row">
+    <whatsapp></whatsapp>
       <div class="col-md-6 offset-md-3">
         <div  class="signup-form image_back">
           <form action="" class="mt-5 border p-4 bg-light shadow-lg">
