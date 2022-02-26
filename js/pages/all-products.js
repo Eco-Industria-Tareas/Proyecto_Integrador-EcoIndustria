@@ -103,7 +103,7 @@ export default Vue.component("all-products", {
   
         
         <!--Productos destacados-->
-        <section class="mt-4 py-3 bg_tertiary rounded-3">
+        <section class="mt-4 py-3 rounded-3">
           <div class="container mt-10  ">
             <div class="d-flex justify-content-center mb-2">
               <h2 class="text_secondary fw-bold">TODOS LOS PRODUCTOS</h2> 

@@ -94,7 +94,7 @@ export default Vue.component("navbar", {
                   <li><button class="dropdown-item" @click="goAlimentacion"><i class="fa fa-utensils me-2"></i>Alimentación</button></li>
                   <li><button class="dropdown-item"  @click="goModa" ><i class="fa fa-socks me-2"></i>Moda</button></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><button class="dropdown-item" @click="goConoce"><i class="bi bi-box-arrow-in-up me-2"></i>Publicar</button></li>
+                  <li><button class="dropdown-item" @click="goConoce"><i class="bi bi-box-arrow-in-up me-2"></i>Asociarse</button></li>
                 </ul>
               </li>
             </ul>
