@@ -10,6 +10,9 @@ export default Vue.component("moda", {
         };
       },
       methods: {
+        goProduct(){
+          this.$router.push("/product-view")
+        },
         async setCategory(category) {
           let vm = this;
           vm.current_category = category;
@@ -81,7 +84,34 @@ export default Vue.component("moda", {
         
       },
     template: `
-    <div>
+                <section>
+            <div class="my-5 text_primary text-center">
+                    <h2 class="font_mochiy">MODA</h2>
+                </div>
+            <div class="container mt-2" >
+
+                <div class="row gx-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 " >
+                    <div class="col mb-5"  v-for="product in products" :key="product.id">
+                        <div class="card h-100 p-2 shadow-lg d-flex align-items-center bg_tertiary">
+                            <img  v-bind:src="product.photo_1" alt="..." class="card-img-top img-fluid img-thumbnail">
+                            <div class="card-body">
+                                <p class="card-text fw-bolder text-center">{{ product.name }}</p>
+                                <div class="d-flex justify-content-center text-warning small"><i
+                                        class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i
+                                        class="bi bi-star-fill"></i> <i class="bi bi-star"></i> <i
+                                        class="bi bi-star"></i> <span class="px-3 text-dark">3</span></div>
+                            </div> <span id="precio" class="mb-2">Q {{product.price}}</span>
+                            <div class="col-md-12 d-flex justify-content-center mb-2">
+                              <button
+                              @click="goProduct" class="btn-dark bg_primary fw-bolder  rounded ">
+                                    Ver Producto
+                                </button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- <div>
     <section>
     <div class="d-flex justify-content-around row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 row-cols-xl-4">
 
@@ -115,7 +145,7 @@ export default Vue.component("moda", {
 
 </div>
         </section>
-</div>
+</div> -->
       `,
   });
   

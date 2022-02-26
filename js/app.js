@@ -7,6 +7,7 @@ import moda from "./components/moda.js";
 import blog from "./components/blog.js";
 import Navbar from "./components/navbar.js";
 import inicio from "./pages/inicio.js";
+import Allproducts from "./pages/all-products.js";
 import ProductView from "./pages/product_view.js";
 import piepagina from "./components/footer.js";
 import conocenos from "./pages/conocenos.js";
@@ -19,6 +20,7 @@ import whatsapp from "./components/whatsapp.js";
 // Definimos las rutas del proyecto
 var routes = [
   { path: "/", component: inicio },
+  { path: "/all-products", component: Allproducts },
   { path: "/register", component: RegisterPage },
   { path: "/login_page", component: LoginPage},
   { path: "/product-view", component: ProductView},

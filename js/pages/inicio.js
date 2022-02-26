@@ -21,6 +21,9 @@ export default Vue.component("inicio", {
       goProduct(){
         this.$router.push("/product-view")
       },
+      goAll(){
+        this.$router.push("/all-products")
+      },
       async setCategory(category) {
         let vm = this;
         vm.current_category = category;
@@ -169,10 +172,52 @@ export default Vue.component("inicio", {
             <img src="https://tienda.oxfamintermon.org/modules/pspagebuilder/views/img/Banner%20b2c%20rebajas%20enero-min.png" class="rounded-3" style="width: 100%;" alt="">
           </a>
         </div>
+        
+        <!--Productos destacados-->
+        <section class="mt-4 py-3 bg_tertiary rounded-3">
+          <div class="container mt-10  ">
+            <div class="d-flex justify-content-center mb-2">
+              <h2 class="text_secondary fw-bold">NUESTROS PRODUCTOS DESTACADOS</h2> 
+            </div>
+
+            <div class="d-flex justify-content-around row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+              <div class="py-2"  v-for="product in products.slice(0, 3)" :key="product.id">
+                <div class="card h-100 p-2 shadow-lg d-flex align-items-center " >
+                  <img  v-bind:src="product.photo_1" class="card-img-top img-fluid img-thumbnail" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-text fw-bolder text-center">{{ product.name }}</h4>
+                    <div class="d-flex justify-content-center text-warning small">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star"></i>
+                    </div>
+                  </div>
+                  <span id="precio" class="mb-2">Q {{product.price}}</span>
+                  <div class="col-md-12 d-flex justify-content-center mb-2">
+                    <button @click="goProduct" class="btn-dark bg_primary fw-bolder  rounded ">
+                      Ver Producto
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto my-5">
+              <button type="button" @click="goAll" class="btn btn_fourth shadow fw-bolder my-2" styles="">
+                        VER TODO
+              </button>
+            </div>
+          </div>
+        <div>
+ 
+          </div>
+        </section>
 
 
         <!--Productos destacados-->
-        <section class="mt-4 py-3 bg_tertiary rounded-3">
+        <!-- <section class="mt-4 py-3 bg_tertiary rounded-3">
           <div class="container mt-10 ">
             <div class="d-flex justify-content-center mb-2">
               <h2 class="text_secondary fw-bold">NUESTROS PRODUCTOS</h2> 
@@ -213,7 +258,7 @@ export default Vue.component("inicio", {
                   </button>
             </div>
           </div>
-        </section>
+        </section> -->
       </section>
 
 
