@@ -187,6 +187,8 @@ export default Vue.component("inicio", {
                     <img  v-bind:src="product.photo_1" class="card-img-top img-fluid img-thumbnail" alt="...">
                     <div class="card-body">
                       <h4 class="card-text fw-bolder text-center">{{ product.name }}</h4>
+                      <p class="card-text fw-bolder text-center">{{ product.description }}</p>
+                      
                       <div class="d-flex justify-content-center text-warning small">
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
